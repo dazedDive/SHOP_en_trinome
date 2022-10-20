@@ -1,5 +1,5 @@
 CREATE TABLE customer(
-   Id_customer INT AUTO_INCREMENT,
+   Id_customer VARCHAR(255),
    first_name VARCHAR(255),
    last_name VARCHAR(255),
    email VARCHAR(255),
@@ -10,7 +10,7 @@ CREATE TABLE customer(
 );
 
 CREATE TABLE collection(
-   Id_collection INT AUTO_INCREMENT,
+   Id_collection VARCHAR(255),
    name VARCHAR(255),
    description VARCHAR(255),
    img_src VARCHAR(255),
@@ -20,7 +20,7 @@ CREATE TABLE collection(
 );
 
 CREATE TABLE command(
-   Id_command INT AUTO_INCREMENT,
+   Id_command VARCHAR(255),
    date_of_order DATE,
    transport_mode VARCHAR(255),
    transport_price DECIMAL(15,2),
@@ -31,7 +31,7 @@ CREATE TABLE command(
 );
 
 CREATE TABLE artist_kid(
-   Id_artist_kid INT AUTO_INCREMENT,
+   Id_artist_kid VARCHAR(255),
    name VARCHAR(255),
    biographie TEXT,
    img_src VARCHAR(255),
@@ -41,7 +41,7 @@ CREATE TABLE artist_kid(
 );
 
 CREATE TABLE account(
-   Id_account INT AUTO_INCREMENT,
+   Id_account VARCHAR(255),
    pseudo VARCHAR(255),
    password VARCHAR(255),
    is_admin BOOLEAN,
@@ -52,7 +52,7 @@ CREATE TABLE account(
 );
 
 CREATE TABLE drawing(
-   Id_drawing INT AUTO_INCREMENT,
+   Id_drawing VARCHAR(255),
    name VARCHAR(255),
    description VARCHAR(255),
    size VARCHAR(255),
@@ -69,7 +69,7 @@ CREATE TABLE drawing(
 );
 
 CREATE TABLE images(
-   Id_images INT AUTO_INCREMENT,
+   Id_images VARCHAR(255),
    img_src VARCHAR(255),
    image_alt VARCHAR(255),
    is_deleted BOOLEAN,
